@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <title>Music players</title>
 </head>
 <body>
@@ -12,13 +13,27 @@
 
     <div class="music-container">
         <div class="music-info">
-            <h4 class="title">
+            <h4 id="title">
                 Some music
             </h4>
             <div class="progress-container">
                 <div class="progress"></div>
             </div>
         </div>
+        <audio src="music/Human.mp3" id = "audio"></audio>
+        <img src = "images/human.png" alt = "music-cover" id = "cover"></img>
+    </div>
+
+    <div class="nav">
+        <button id = "prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+        </button>
+        <button id = "play" class="action-btn acion-btn-big">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id = "next" class="action-btn">
+            <i class="fas fa-forward"></i>
+        </button>
     </div>
 
     <script src="script.js"></script>
